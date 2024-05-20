@@ -48,7 +48,7 @@ Cosmos
 ## Screenshots
 Screenshots of the app in action are included below to provide a visual reference of the implemented features.
 
-![Photo Grid View](https://i.ibb.co/QfF5hQ8/Simulator-Screen-Shot-i-Phone-14-2024-05-20-at-03-08-17.png) ![Photo Detail View](https://i.ibb.co/xFXnkFm/Simulator-Screen-Shot-i-Phone-14-2024-05-20-at-03-08-34.png)
+![](https://i.ibb.co/QfF5hQ8/Simulator-Screen-Shot-i-Phone-14-2024-05-20-at-03-08-17.png) | ![](https://i.ibb.co/xFXnkFm/Simulator-Screen-Shot-i-Phone-14-2024-05-20-at-03-08-34.png)
 
 ## Limitations
 
