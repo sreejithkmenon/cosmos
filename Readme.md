@@ -1,27 +1,18 @@
-# Photo Gallery App for Cosmos Code Share
+# Cosmos Photo Gallery App
 
-## Overview
-This iOS application is a photo gallery app that utilizes images from the Unsplash API. It showcases a grid of photos, which users can tap to view in detail, including descriptions and photographer information. The app is developed using the Model-View-ViewModel (MVVM) architecture to ensure clean separation of concerns and better manageability.
+This project is an iOS photo gallery app, developed as a code sharing exercise for a Senior iOS Engineer role at Cosmos. The app utilizes the Unsplash API to fetch images and displays them in a grid format. Users can tap on any image to view it in detail along with additional information such as the image's description and the photographer's details.
 
 ## Features
-- **Launch Screen**: Initial screen where API calls are made.
-- **Photo Grid**: Displays images in a grid layout. Tapping an image opens the detail view.
-- **Detail View**: Shows the full-screen image along with its description and photographer details.
-- **Error Handling**: Provides user feedback for no internet connection or no data scenarios.
-- **Architecture**: Utilizes the MVVM architectural pattern for robust and scalable app development.
 
-## Motivation
-I chose this project to demonstrate my skills in iOS development, particularly in building a modern, scalable application using MVVM architecture. Given that Cosmos operates in a similar domain, this app aligns well with the company's focus and showcases relevant skills that could be utilized at Cosmos.
-
-## Installation
-To run this project, clone the repository and open `Cosmos.xcodeproj` in Xcode. Ensure you have Xcode installed on your machine (preferably Xcode 12 or later). Run the project using the simulator or a physical device.
-
-## Limitations and Improvements
-- **Device Testing**: Due to the lack of a physical iOS device, the app was tested only in simulators. Testing on physical devices could potentially reveal issues not visible in the simulator.
-- **Image Caching**: Implementing image caching would enhance performance, reducing API calls and loading times.
-- **UI Enhancements**: Advanced animations and UI elements could be added to improve user engagement and app aesthetics.
+- **Launch Screen:** Displays while API calls are being made at initialization.
+- **Photo Grid View:** Images are displayed in a grid format in `PhotoGridView.swift`.
+- **Photo Detail View:** Full screen view of the image with more details in `PhotoDetailView.swift`.
+- **Error Handling:** Shows appropriate messages when there is no internet connection or if the API returns no data.
+- **MVVM Architecture:** Utilizes Model View ViewModel architecture for structured and scalable code.
+- **Documentation:** Comprehensive documentation provided for ease of understanding and maintenance.
 
 ## Project Structure
+
 ```
 Cosmos
 ├── ViewModels
@@ -32,7 +23,9 @@ Cosmos
 │   ├── APIServiceProtocol.swift
 │   └── APIMockService.swift
 ├── Assets.xcassets
-│   └── App icons and colors
+│   └── AppIcon.appiconset
+│       ├── Icons
+│       └── Contents.json
 ├── Models
 │   ├── User.swift
 │   ├── Photo.swift
@@ -42,16 +35,36 @@ Cosmos
 │   ├── PhotoGridView.swift
 │   ├── PhotoDetailView.swift
 │   └── ErrorView.swift
-├── Helpers
-│   └── Utils.swift
-└── CosmosApp.swift
+└── Helpers
+    └── Utils.swift
 ```
+
+## Installation
+
+1. Clone the repository to your local machine.
+2. Open the `Cosmos.xcodeproj` file in Xcode.
+3. Build and run the application on your simulator or a connected iOS device.
 
 ## Screenshots
 Screenshots of the app in action are included below to provide a visual reference of the implemented features.
 
-![Photo Grid View](https://ibb.co/f2YcZF8)
-![Photo Detail View](https://ibb.co/km5L7m3)
+![Photo Grid View](https://i.ibb.co/QfF5hQ8/Simulator-Screen-Shot-i-Phone-14-2024-05-20-at-03-08-17.png)
+![Photo Detail View](https://i.ibb.co/xFXnkFm/Simulator-Screen-Shot-i-Phone-14-2024-05-20-at-03-08-34.png)
 
-## Conclusion
-This application serves as a comprehensive example of my abilities to architect and develop iOS applications that are not only functional but also well-designed and user-friendly. I look forward to the opportunity to bring similar innovative solutions to the Cosmos team.
+## Limitations
+
+Due to the lack of access to a physical iOS device during development:
+- Image caching and advanced UI animations were not implemented.
+- These could be potential areas for future enhancement to improve user experience and app performance.
+
+## Why This Code?
+
+I chose this project to align with Cosmos's focus on visual content, showcasing my ability to develop applications that handle media efficiently. The implementation of MVVM architecture demonstrates my capacity to structure code for scalability and maintainability, which is crucial for team environments and complex applications.
+
+## Areas for Improvement
+
+- **Image Caching:** Implement caching to reduce data usage and improve load times.
+- **Advanced UI:** Integrate more sophisticated UI animations to enhance the user experience.
+- **Testing:** Increase unit and integration tests to ensure reliability and stability.
+
+By sharing this code, I affirm that I have the right to distribute it publicly, and it's intended solely for evaluation purposes by Cosmos.
